@@ -68,21 +68,24 @@ var stringBox = Box<String>.empty
 let soccerBall = Thing(name: "Soccer Ball")
 let boxWithSoccerBall = Box.contains(soccerBall)
 
+let phone = Thing(name: "Phone")
+let boxwithPhone = Box.contains(phone)
+
+let chocolate = Thing(name: "Chocolate")
+let boxWhithChocolate = Box.contains(chocolate)
 
 protocol HasName {
-    var name: String {
-        get
-    }
+    var name: String { get }
     func whatever() -> String
 }
 
 func inTheBox(box: Box<HasName>) -> String {
-  switch box {
-  case .empty:
-    return "box is empty"
-  case .contains(let thing):
-    return "box contains something: ] \(thing.name))"
-  }
+    switch box {
+    case .empty:
+        return "box is empty"
+    case .contains(let thing):
+        return "box contains something: ] \(thing.name))"
+    }
 }
 
 
