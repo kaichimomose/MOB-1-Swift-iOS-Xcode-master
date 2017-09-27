@@ -59,7 +59,7 @@ else {
 */
 
 var optionalString: String? = nil
-guard let unwrappedString = optionalString else {throw NilError.nothing}
+//guard let unwrappedString = optionalString else {throw NilError.nothing}
 
 //: Forceful Unwrapping
 

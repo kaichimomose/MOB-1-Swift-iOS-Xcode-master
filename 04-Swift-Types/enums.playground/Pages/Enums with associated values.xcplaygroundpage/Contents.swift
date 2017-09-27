@@ -79,7 +79,7 @@ protocol HasName {
     func whatever() -> String
 }
 
-func inTheBox(box: Box<HasName>) -> String {
+func inTheBox(box: Box<Thing>) -> String {
     switch box {
     case .empty:
         return "box is empty"
@@ -90,7 +90,7 @@ func inTheBox(box: Box<HasName>) -> String {
 
 
 
-//inTheBox(box: boxWithSoccerBall)
+inTheBox(box: boxWithSoccerBall)
 //inTheBox(box: emptyBox)
 
 let box = Box.contains("hello")
