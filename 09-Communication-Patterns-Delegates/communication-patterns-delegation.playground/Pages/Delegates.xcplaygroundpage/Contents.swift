@@ -58,7 +58,7 @@ bus.reachedDestination()
 //: Lets take a look at how this looks like in a diagram
 
 
-//: ![Delegation](delegation.png)
+//![Delegation](delegation.png)
 
 
 /*:
